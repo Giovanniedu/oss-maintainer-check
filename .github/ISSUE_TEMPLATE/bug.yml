@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible problem with OSS Maintainer Check
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the behavior and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Tool and Python version
+      placeholder: "oss-maintainer-check 0.1.0, Python 3.12"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use a small example directory if possible. Do not include secrets.
+    validations:
+      required: true
